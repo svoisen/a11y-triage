@@ -1,7 +1,7 @@
 {
-  "name": "layout-triage",
+  "name": "a11y-triage",
   "version": "1.0.0",
-  "description": "Script for updating Firefox Platform Layout triage rotation calendar.",
+  "description": "Script for updating Mozilla a11y triage rotation calendar.",
   "main": "index.js",
   "scripts": {
     "update": "node index.js update",
