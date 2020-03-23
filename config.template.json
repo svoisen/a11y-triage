@@ -1,0 +1,29 @@
+{
+  "triagers": {
+    "Jamie Teh": {
+      "bzmail": "jteh@mozilla.com"
+    },
+    "Marco Zehe": {
+      "bzmail": "mzehe@mozilla.com"
+    },
+    "Asa Dotzler": {
+      "bzmail": "asa@mozilla.com"
+    },
+    "Eitan Isaacson": {
+      "bzmail": "eitan@monotonous.org"
+    },
+    "Yura Zenevich": {
+      "bzmail": "yzenevich@mozilla.com"
+    },
+    "Morgan Reschenberg": {
+      "bzmail": "mreschenberg@mozilla.com"
+    },
+    "Sean Voisen": {
+      "bzmail": "svoisen@mozilla.com"
+    }
+  },
+  "components": {
+    "disabilityAccessAPIs": { "product": "Core", "component": "Disability Access APIs" },
+    "disabilityAccess": { "product": "Firefox", "component": "Disability Access" }
+  }
+}
