@@ -88,10 +88,10 @@ function getLastDutyCycle({ dutyCycleHistory }) {
     throw `\nFATAL ERROR: Invalid data in history file!`;
   }
 
-  const lastTriager = dutyCycleHistory[lastDutyDate];
+  const lastTriagerName = dutyCycleHistory[lastDutyDate];
   return {
     lastDutyDate,
-    lastTriager
+    lastTriagerName
   }
 }
 
