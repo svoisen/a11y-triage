@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Layout Triage
+METHOD:PUBLISH
+PRODID:node-ical-toolkit
+X-WR-TIMEZONE:America/Los_Angeles
+
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+
+
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+
+END:VTIMEZONE
+
+
+BEGIN:VEVENT
+UID:2d376e62
+DTSTAMP:20200324T225433Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200330
+DTEND;VALUE=DATE:20200406
+SUMMARY:Triage Duty: Jamie Teh
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Jamie Teh</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?priority=--&resolution=---&query_format=advanced&chfield=%5BBug%20creation%5D&chfieldfrom=-60d&j_top=OR&f12=CP&f11=status_whiteboard&o11=notsubstring&v11=%5Baccess-p&f10=keywords&o10=casesubstring&v10=access&f9=OP&f8=CP&f7=component&o7=equals&v7=Disability%20Access%20APIs&f6=product&o6=equals&v6=Core&f5=OP&f4=CP&f3=component&o3=equals&v3=Disability%20Access&f2=product&o2=equals&v2=Firefox&f1=OP&f16=CP&f15=component&o15=equals&v15=Accessibility%20Tools&f14=product&o14=equals&v14=DevTools&f13=OP" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:491f6ad6
+DTSTAMP:20200324T225433Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200406
+DTEND;VALUE=DATE:20200413
+SUMMARY:Triage Duty: Marco Zehe
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Marco Zehe</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?priority=--&resolution=---&query_format=advanced&chfield=%5BBug%20creation%5D&chfieldfrom=-60d&j_top=OR&f12=CP&f11=status_whiteboard&o11=notsubstring&v11=%5Baccess-p&f10=keywords&o10=casesubstring&v10=access&f9=OP&f8=CP&f7=component&o7=equals&v7=Disability%20Access%20APIs&f6=product&o6=equals&v6=Core&f5=OP&f4=CP&f3=component&o3=equals&v3=Disability%20Access&f2=product&o2=equals&v2=Firefox&f1=OP&f16=CP&f15=component&o15=equals&v15=Accessibility%20Tools&f14=product&o14=equals&v14=DevTools&f13=OP" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:e7b01c3b
+DTSTAMP:20200324T225433Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200413
+DTEND;VALUE=DATE:20200420
+SUMMARY:Triage Duty: Asa Dotzler
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Asa Dotzler</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?priority=--&resolution=---&query_format=advanced&chfield=%5BBug%20creation%5D&chfieldfrom=-60d&j_top=OR&f12=CP&f11=status_whiteboard&o11=notsubstring&v11=%5Baccess-p&f10=keywords&o10=casesubstring&v10=access&f9=OP&f8=CP&f7=component&o7=equals&v7=Disability%20Access%20APIs&f6=product&o6=equals&v6=Core&f5=OP&f4=CP&f3=component&o3=equals&v3=Disability%20Access&f2=product&o2=equals&v2=Firefox&f1=OP&f16=CP&f15=component&o15=equals&v15=Accessibility%20Tools&f14=product&o14=equals&v14=DevTools&f13=OP" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li></ul>
+END:VEVENT
+
+REFRESH-INTERVAL:VALUE=DURATION:P1H
+X-WR-CALDESC:Layout Triage
+END:VCALENDAR

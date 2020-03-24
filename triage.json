@@ -1,0 +1,18 @@
+{
+  "triagers": {
+    "Jamie Teh": {
+      "bzmail": "jteh@mozilla.com"
+    },
+    "Marco Zehe": {
+      "bzmail": "mzehe@mozilla.com"
+    },
+    "Asa Dotzler": {
+      "bzmail": "asa@mozilla.com"
+    }
+  },
+  "duty-start-dates": {
+    "2020-03-30": "Jamie Teh",
+    "2020-04-06": "Marco Zehe",
+    "2020-04-13": "Asa Dotzler"
+  }
+}
