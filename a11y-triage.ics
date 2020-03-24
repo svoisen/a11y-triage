@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
-X-WR-CALNAME:Layout Triage
+X-WR-CALNAME:Accessibility Triage
 METHOD:PUBLISH
 PRODID:node-ical-toolkit
 X-WR-TIMEZONE:America/Los_Angeles
@@ -31,8 +31,8 @@ END:VTIMEZONE
 
 
 BEGIN:VEVENT
-UID:2d376e62
-DTSTAMP:20200324T225433Z
+UID:32eff99f
+DTSTAMP:20200324T225918Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200330
 DTEND;VALUE=DATE:20200406
@@ -43,8 +43,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:491f6ad6
-DTSTAMP:20200324T225433Z
+UID:f54db91b
+DTSTAMP:20200324T225918Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200406
 DTEND;VALUE=DATE:20200413
@@ -55,14 +55,26 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:e7b01c3b
-DTSTAMP:20200324T225433Z
+UID:3ef11187
+DTSTAMP:20200324T225918Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200413
 DTEND;VALUE=DATE:20200420
 SUMMARY:Triage Duty: Asa Dotzler
 SEQUENCE:0
 DESCRIPTION:On duty this week: <strong>Asa Dotzler</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?priority=--&resolution=---&query_format=advanced&chfield=%5BBug%20creation%5D&chfieldfrom=-60d&j_top=OR&f12=CP&f11=status_whiteboard&o11=notsubstring&v11=%5Baccess-p&f10=keywords&o10=casesubstring&v10=access&f9=OP&f8=CP&f7=component&o7=equals&v7=Disability%20Access%20APIs&f6=product&o6=equals&v6=Core&f5=OP&f4=CP&f3=component&o3=equals&v3=Disability%20Access&f2=product&o2=equals&v2=Firefox&f1=OP&f16=CP&f15=component&o15=equals&v15=Accessibility%20Tools&f14=product&o14=equals&v14=DevTools&f13=OP" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:35eac85a
+DTSTAMP:20200324T225918Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200420
+DTEND;VALUE=DATE:20200427
+SUMMARY:Triage Duty: Eitan Isaacson
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Eitan Isaacson</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?priority=--&resolution=---&query_format=advanced&chfield=%5BBug%20creation%5D&chfieldfrom=-60d&j_top=OR&f12=CP&f11=status_whiteboard&o11=notsubstring&v11=%5Baccess-p&f10=keywords&o10=casesubstring&v10=access&f9=OP&f8=CP&f7=component&o7=equals&v7=Disability%20Access%20APIs&f6=product&o6=equals&v6=Core&f5=OP&f4=CP&f3=component&o3=equals&v3=Disability%20Access&f2=product&o2=equals&v2=Firefox&f1=OP&f16=CP&f15=component&o15=equals&v15=Accessibility%20Tools&f14=product&o14=equals&v14=DevTools&f13=OP" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li></ul>
 END:VEVENT
 
 REFRESH-INTERVAL:VALUE=DURATION:P1H
