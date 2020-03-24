@@ -54,7 +54,7 @@ function appendDutyCycle({ date, triagerName, triagerData }) {
   const triagers = calendar[TRIAGERS_KEY];
   const dutyStartDates = calendar[DUTY_START_DATES_KEY];
   if (!dutyStartDates || !triagers) {
-    throw `\nFATAL ERROR: Invalid data in calendar ${component}.json`;
+    throw `\nFATAL ERROR: Invalid data in calendar triage.json`;
   }
 
   if (!triagers[triagerName]) {
@@ -95,18 +95,64 @@ function getLastDutyCycle({ dutyCycleHistory }) {
   }
 }
 
-function generateBugzillaUrl(components) {
-  const prefix = 'https://bugzilla.mozilla.org/buglist.cgi?' +
-    'priority=--' + 
-    '&f1=short_desc' +
-    '&bug_type=defect' + 
-    '&o1=notsubstring' +
-    '&resolution=---' +
-    '&query_format=advanced' +
-    '&chfield=%5BBug%20creation%5D' +
-    '&chfieldfrom=-60d' +
-    '&v1=%5Bmeta%5D';
-  return prefix + '&' + components.map(componentData => `product=${encodeURIComponent(componentData.product)}&component=${encodeURIComponent(componentData.component)}`).join('&')
+function getBugzillaUrl() {
+  const url = 'https://bugzilla.mozilla.org/buglist.cgi?' +
+  'priority=--' + 
+  '&resolution=---' +
+  '&query_format=advanced' +
+
+  /** Bugs created in last 60 days */
+  '&chfield=%5BBug%20creation%5D' +
+  '&chfieldfrom=-60d' +
+
+  /** OR the groups listed below */
+  '&j_top=OR' +
+
+  /** Group: Has access keyword, no [access-pX] in whiteboard */
+  '&f12=CP' +
+  '&f11=status_whiteboard' +
+  '&o11=notsubstring' + 
+  '&v11=%5Baccess-p' +
+  '&f10=keywords' +
+  '&o10=casesubstring' +
+  '&v10=access' +
+  '&f9=OP' +
+  /** End group */
+
+  /** Group: Is in Core:Disability Access APIs */
+  '&f8=CP' +
+  '&f7=component' +
+  '&o7=equals' +
+  '&v7=Disability%20Access%20APIs' +
+  '&f6=product' +
+  '&o6=equals' +
+  '&v6=Core' +
+  '&f5=OP' +
+  /** End group */
+
+  /** Group: Is in Firefox:Disability Access */
+  '&f4=CP' +
+  '&f3=component' +
+  '&o3=equals' +
+  '&v3=Disability%20Access' +
+  '&f2=product' +
+  '&o2=equals' +
+  '&v2=Firefox' +
+  '&f1=OP' +
+  /** End group */
+
+  /** Group: Is in DevTools:Disability Tools */
+  '&f16=CP' +
+  '&f15=component' +
+  '&o15=equals' +
+  '&v15=Accessibility%20Tools' +
+  '&f14=product' +
+  '&o14=equals' +
+  '&v14=DevTools' +
+  '&f13=OP'; 
+  /** End group */
+
+  return url;
 }
 
 /**
@@ -114,15 +160,15 @@ function generateBugzillaUrl(components) {
  * @param {*} params 
  *   @param {*} params.dutyCycleHistory
  */
-function generateIcsFile({ dutyCycleHistory, components }) {
+function generateIcsFile({ dutyCycleHistory }) {
   const builder = ical.createIcsFileBuilder();
 
-  builder.calname = 'Layout Triage';
+  builder.calname = 'a11y Team Triage';
   builder.timezone = 'America/Los_Angeles';
   builder.tzid = 'America/Los_Angeles';
   builder.additionalTags = {
     'REFRESH-INTERVAL': 'VALUE=DURATION:P1H',
-    'X-WR-CALDESC': 'Layout Triage'
+    'X-WR-CALDESC': 'a11y Team Triage'
   };
 
   for (let dutyCycleDate in dutyCycleHistory) {
@@ -135,8 +181,10 @@ function generateIcsFile({ dutyCycleHistory, components }) {
       summary: `Triage Duty: ${triagerName}`,
       allDay: true,
       transp: 'TRANSPARENT',
-      description: `<strong>${triagerName}:</strong> ` + 
-        `<a href="${generateBugzillaUrl(components)}" title="Bugzilla Query">Bugzilla Query</a>`
+      description: `On duty this week: <strong>${triagerName}</strong>` + 
+        `<ul>` +
+        `<li><a href="${getBugzillaUrl()}" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li>` +
+        `</ul>`
     });
   }
 
@@ -174,14 +222,14 @@ function generateDutyCycle({ dutyCycleHistory, triagers }) {
 }
 
 function runUpdate() {
-  const { triagers, components } = readConfig();
+  const { triagers } = readConfig();
   const { dutyCycleHistory } = JSON.parse(fs.readFileSync(HISTORY_FILE));
   const { date, triagerName } = generateDutyCycle({ dutyCycleHistory, triagers });
 
   dutyCycleHistory[date] = triagerName;
   appendDutyCycle({ date, triagerName, triagerData: triagers[triagerName] });
   writeToHistory({ dutyCycleHistory });
-  generateIcsFile({ dutyCycleHistory, components });
+  generateIcsFile({ dutyCycleHistory });
 }
 
 /**

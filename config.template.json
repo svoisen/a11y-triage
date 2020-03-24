@@ -21,9 +21,5 @@
     "Sean Voisen": {
       "bzmail": ""
     }
-  },
-  "components": [
-    { "product": "Core", "component": "Disability Access APIs" },
-    { "product": "Firefox", "component": "Disability Access" }
-  ]
+  }
 }
