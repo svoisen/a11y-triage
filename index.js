@@ -13,6 +13,28 @@ const CYCLE_LENGTH_DAYS = 7;
 const DAY_TO_MS = 24 * 60 * 60 * 1000;
 const CYCLE_LENGTH_MS = CYCLE_LENGTH_DAYS * DAY_TO_MS;
 
+const BZ_QUERY = 'https://bugzilla.mozilla.org/buglist.cgi?f17=OP&v10=Core&f10=product&f15=component&f5=CP&o11=equals&v15=Accessibility%20Tools&o2=casesubstring&query_format=advanced&f14=product&f18=product&f9=OP&v14=DevTools&f16=CP&v18=Firefox&chfieldfrom=-60d&f20=CP&o7=equals&f6=OP&o19=equals&resolution=---&o4=anyexact&o3=notsubstring&o18=equals&o14=equals&chfield=%5BBug%20creation%5D&j_top=OR&f2=keywords&f11=component&v2=access&f12=CP&o15=equals&v11=Disability%20Access%20APIs&f8=OP&o10=equals&j8=OR&f3=status_whiteboard&v3=%5Baccess-p&f1=OP&f4=product&f21=CP&v19=Disability%20Access&f22=CP&f13=OP&v4=Core%2CFirefox%2CDevTools%2CToolkit&f19=component&f7=priority&v7=--&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other';
+const FENIX_QUERY = 'https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y';
+
+function formatDateForGitHub(date) {
+  let d = new Date(date),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear();
+
+  if (month.length < 2) month = '0' + month;
+  if (day.length < 2) day = '0' + day;
+
+  return [year, month, day].join('-');
+}
+
+function getFenixQuery(dutyCycleDate) {
+  const url = FENIX_QUERY;
+  const dutyCycleDateMs = new Date(dutyCycleDate).getTime();
+  const filterDate = new Date(dutyCycleDateMs - DAY_TO_MS * 60);
+  return url + '+created%3A%3E' + formatDateForGitHub(filterDate);
+}
+
 /**
  * Return the parsed results from the config file. Reads file synchronously.
  */
@@ -30,13 +52,13 @@ function writeToHistory(json) {
 }
 
 /**
- * Given a date, return the date of the Monday preceding it.
+ * Given a date, return the date of the Sunday preceding it.
  * @param {Date} date 
  */
-function getLastMonday(date) {
+function getLastSunday(date) {
   const day = date.getDay() || 7;  
-  if (day !== 1) {
-    date.setHours(-24 * (day - 1)); 
+  if (day !== 0) {
+    date.setHours(-24 * day); 
   }
 
   return date;
@@ -95,66 +117,6 @@ function getLastDutyCycle({ dutyCycleHistory }) {
   }
 }
 
-function getBugzillaUrl() {
-  const url = 'https://bugzilla.mozilla.org/buglist.cgi?' +
-  'priority=--' + 
-  '&resolution=---' +
-  '&query_format=advanced' +
-
-  /** Bugs created in last 60 days */
-  '&chfield=%5BBug%20creation%5D' +
-  '&chfieldfrom=-60d' +
-
-  /** OR the groups listed below */
-  '&j_top=OR' +
-
-  /** Group: Has access keyword, no [access-pX] in whiteboard */
-  '&f12=CP' +
-  '&f11=status_whiteboard' +
-  '&o11=notsubstring' + 
-  '&v11=%5Baccess-p' +
-  '&f10=keywords' +
-  '&o10=casesubstring' +
-  '&v10=access' +
-  '&f9=OP' +
-  /** End group */
-
-  /** Group: Is in Core:Disability Access APIs */
-  '&f8=CP' +
-  '&f7=component' +
-  '&o7=equals' +
-  '&v7=Disability%20Access%20APIs' +
-  '&f6=product' +
-  '&o6=equals' +
-  '&v6=Core' +
-  '&f5=OP' +
-  /** End group */
-
-  /** Group: Is in Firefox:Disability Access */
-  '&f4=CP' +
-  '&f3=component' +
-  '&o3=equals' +
-  '&v3=Disability%20Access' +
-  '&f2=product' +
-  '&o2=equals' +
-  '&v2=Firefox' +
-  '&f1=OP' +
-  /** End group */
-
-  /** Group: Is in DevTools:Disability Tools */
-  '&f16=CP' +
-  '&f15=component' +
-  '&o15=equals' +
-  '&v15=Accessibility%20Tools' +
-  '&f14=product' +
-  '&o14=equals' +
-  '&v14=DevTools' +
-  '&f13=OP'; 
-  /** End group */
-
-  return url;
-}
-
 /**
  * 
  * @param {*} params 
@@ -183,7 +145,8 @@ function generateIcsFile({ dutyCycleHistory }) {
       transp: 'TRANSPARENT',
       description: `On duty this week: <strong>${triagerName}</strong>` + 
         `<ul>` +
-        `<li><a href="${getBugzillaUrl()}" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li>` +
+        `<li><a href="${BZ_QUERY}" title="Bugzilla query">Untriaged Bugs in Bugzilla</a></li>` +
+        `<li><a href="${getFenixQuery(dutyCycleDate)}" title="Fenix query">Untriaged Fenix Bugs</a></li>` +
         `</ul>`
     });
   }
@@ -202,7 +165,7 @@ function generateDutyCycle({ dutyCycleHistory, triagers }) {
 
   if (!lastDutyDate || !lastTriagerName) {
     console.warn('No existing duty cycle history. Generating first cycle.');
-    lastDutyDate = createDateString(getLastMonday(new Date()));
+    lastDutyDate = createDateString(getLastSunday(new Date()));
   } else {
     lastTriagerIdx = triagerNames.indexOf(lastTriagerName);
     if (lastTriagerIdx === -1) {
