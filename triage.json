@@ -1,18 +1,22 @@
 {
   "triagers": {
-    "Jamie Teh": {
-      "bzmail": "jteh@mozilla.com"
+    "Asa Dotzler": {
+      "bzmail": "asa@mozilla.com"
     },
     "Marco Zehe": {
       "bzmail": "mzehe@mozilla.com"
     },
-    "Asa Dotzler": {
-      "bzmail": "asa@mozilla.com"
+    "Jamie Teh": {
+      "bzmail": "jteh@mozilla.com"
+    },
+    "Eitan Isaacson": {
+      "bzmail": "eitan@monotonous.org"
     }
   },
   "duty-start-dates": {
-    "2020-03-30": "Jamie Teh",
-    "2020-04-06": "Marco Zehe",
-    "2020-04-13": "Asa Dotzler"
+    "2020-03-29": "Asa Dotzler",
+    "2020-04-05": "Marco Zehe",
+    "2020-04-12": "Jamie Teh",
+    "2020-04-19": "Eitan Isaacson"
   }
 }
