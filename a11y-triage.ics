@@ -31,8 +31,8 @@ END:VTIMEZONE
 
 
 BEGIN:VEVENT
-UID:a896d582
-DTSTAMP:20200618T224412Z
+UID:cfe25dff
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200329
 DTEND;VALUE=DATE:20200405
@@ -43,8 +43,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:794d5e29
-DTSTAMP:20200618T224412Z
+UID:966990ab
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200405
 DTEND;VALUE=DATE:20200412
@@ -55,8 +55,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:b8e77931
-DTSTAMP:20200618T224412Z
+UID:def121fc
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200412
 DTEND;VALUE=DATE:20200419
@@ -67,8 +67,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:17090c7d
-DTSTAMP:20200618T224412Z
+UID:d123e19d
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200419
 DTEND;VALUE=DATE:20200426
@@ -79,8 +79,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:ef98534c
-DTSTAMP:20200618T224412Z
+UID:c15629ae
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200426
 DTEND;VALUE=DATE:20200503
@@ -91,8 +91,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:3e002afe
-DTSTAMP:20200618T224412Z
+UID:43a927fb
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200503
 DTEND;VALUE=DATE:20200510
@@ -103,8 +103,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:0f3610c3
-DTSTAMP:20200618T224412Z
+UID:0b368251
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200510
 DTEND;VALUE=DATE:20200517
@@ -115,8 +115,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:61660191
-DTSTAMP:20200618T224412Z
+UID:b9f093b8
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200517
 DTEND;VALUE=DATE:20200524
@@ -127,8 +127,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:e4b70d92
-DTSTAMP:20200618T224412Z
+UID:714938e6
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200524
 DTEND;VALUE=DATE:20200531
@@ -139,8 +139,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:f6fce8cd
-DTSTAMP:20200618T224412Z
+UID:c3d73033
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200531
 DTEND;VALUE=DATE:20200607
@@ -151,8 +151,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:706064ee
-DTSTAMP:20200618T224412Z
+UID:fea8c232
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200607
 DTEND;VALUE=DATE:20200614
@@ -163,8 +163,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:5758fb46
-DTSTAMP:20200618T224412Z
+UID:5c8dca24
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200614
 DTEND;VALUE=DATE:20200621
@@ -175,8 +175,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:8343547d
-DTSTAMP:20200618T224412Z
+UID:f330acb1
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200621
 DTEND;VALUE=DATE:20200628
@@ -187,8 +187,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:91f0dc25
-DTSTAMP:20200618T224412Z
+UID:da5e7230
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200628
 DTEND;VALUE=DATE:20200705
@@ -199,8 +199,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:1499d555
-DTSTAMP:20200618T224412Z
+UID:4acde1a7
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200705
 DTEND;VALUE=DATE:20200712
@@ -211,8 +211,8 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:97805e96
-DTSTAMP:20200618T224412Z
+UID:73f15acb
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200712
 DTEND;VALUE=DATE:20200719
@@ -223,14 +223,86 @@ END:VEVENT
 
 
 BEGIN:VEVENT
-UID:cc3f4393
-DTSTAMP:20200618T224412Z
+UID:a2ed027f
+DTSTAMP:20200729T160911Z
 TRANSP:TRANSPARENT
 DTSTART;VALUE=DATE:20200719
 DTEND;VALUE=DATE:20200726
 SUMMARY:Triage Duty: Jamie Teh
 SEQUENCE:0
 DESCRIPTION:On duty this week: <strong>Jamie Teh</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-05-19" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:2af22e00
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200726
+DTEND;VALUE=DATE:20200802
+SUMMARY:Triage Duty: Eitan Isaacson
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Eitan Isaacson</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-05-26" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:898e48c6
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200802
+DTEND;VALUE=DATE:20200809
+SUMMARY:Triage Duty: Yura Zenevich
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Yura Zenevich</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-06-02" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:44e50108
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200809
+DTEND;VALUE=DATE:20200816
+SUMMARY:Triage Duty: Morgan Reschenberg
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Morgan Reschenberg</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-06-09" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:d5180b0f
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200816
+DTEND;VALUE=DATE:20200823
+SUMMARY:Triage Duty: Sean Voisen
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Sean Voisen</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-06-16" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:fdff0585
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200823
+DTEND;VALUE=DATE:20200830
+SUMMARY:Triage Duty: Asa Dotzler
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Asa Dotzler</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-06-23" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
+END:VEVENT
+
+
+BEGIN:VEVENT
+UID:c2cdbe99
+DTSTAMP:20200729T160911Z
+TRANSP:TRANSPARENT
+DTSTART;VALUE=DATE:20200830
+DTEND;VALUE=DATE:20200906
+SUMMARY:Triage Duty: Marco Zehe
+SEQUENCE:0
+DESCRIPTION:On duty this week: <strong>Marco Zehe</strong><ul><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-60d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">New Untriaged Bugs in Bugzilla</a></li><li><a href="https://bugzilla.mozilla.org/buglist.cgi?o3=notsubstring&f15=component&f4=product&v3=%5Baccess-s&o15=equals&f3=status_whiteboard&v4=Core%2CFirefox%2CDevTools%2CToolkit&resolution=---&o4=anyexact&v15=Accessibility%20Tools&v19=Disability%20Access&f12=CP&o10=equals&f11=component&v10=Core&o19=equals&f10=product&v11=Disability%20Access%20APIs&chfieldfrom=-365d&o11=equals&f19=component&f2=keywords&o2=casesubstring&j_top=OR&v2=access&v14=DevTools&f7=bug_severity&o14=equals&v7=--&bug_type=defect&o7=equals&f14=product&f20=CP&f21=CP&f17=OP&f9=OP&f22=CP&f18=product&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&f6=OP&f8=OP&columnlist=bug_type%2Cshort_desc%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cchangeddate%2Cstatus_whiteboard%2Ckeywords%2Cpriority%2Cbug_severity&o18=equals&chfield=%5BBug%20creation%5D&v18=Firefox&query_format=advanced&j8=OR&f5=CP&f13=OP&f16=CP&f1=OP" title="Bugzilla query">Older Untriaged Bugs in Bugzilla</a></li><li><a href="https://github.com/mozilla-mobile/fenix/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds%3Atriage+label%3Ab%3Aa11y+created%3A%3E2020-06-30" title="Fenix query">Untriaged Fenix Bugs</a></li></ul>
 END:VEVENT
 
 REFRESH-INTERVAL:VALUE=DURATION:P1H
